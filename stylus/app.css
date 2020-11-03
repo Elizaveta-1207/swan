@@ -31,6 +31,10 @@
 a {
   text-decoration: none;
   color: #000;
+  transition: opacity 0.2s linear;
+}
+a:hover {
+  opacity: 0.6;
 }
 img {
   display: block;
@@ -78,6 +82,10 @@ h6 {
   display: flex;
   align-items: center;
   cursor: pointer;
+  transition: transform 0.3s linear;
+}
+.footer__brif:hover {
+  transform: scale(1.03);
 }
 .footer__brif-logo {
   background-color: #fff;
