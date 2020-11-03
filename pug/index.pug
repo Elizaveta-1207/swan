@@ -1,8 +1,28 @@
 extends common/template.pug
 
+mixin info(infoTitle, ...descriptions)
+  section.info
+    h2.info__title= infoTitle
+    .info__descriptions
+      each description in descriptions
+        p.info__description= description
+
+mixin fullImg(image)
+  section.full
+    img.full__img(src=image, alt='Какой-то контент')
+
 block variables
   - title = "Сайт - Главная";
 
 block content
   main
     include ./pages/afterheader/afterheader.pug
+    include ./pages/preview/preview.pug
+    include ./pages/task/task.pug
+    include ./pages/grid/grid.pug
+    +info('Заголовок, что прототипов очень много', 'Текст про то как невероятно много мы сделали работы и очень устали, но очень довольны. Созерцание, конечно, осмысляет трансцендентальный смысл жизни.', 'По своим философским взглядам Дезами был материалистом и атеистом, последователем Гельвеция, однако ощущение мира раскладывает на элементы сложный гравитационный парадокс, отрицая очевидное.')
+    +fullImg('../images/full-img1.png')
+    +info('Заголовок, что работы супер много', 'Текст про то как невероятно много мы сделали работы и очень устали, но очень довольны. Созерцание, конечно, осмысляет трансцендентальный смысл жизни.', 'По своим философским взглядам Дезами был материалистом и атеистом, последователем Гельвеция, однако ощущение мира раскладывает на элементы сложный гравитационный парадокс, отрицая очевидное.', 'Язык образов методологически подчеркивает естественный предмет деятельности')
+    +fullImg('../images/full-img2.png')
+    include ./pages/example/example.pug
+    include ./pages/prefooter/prefooter.pug
