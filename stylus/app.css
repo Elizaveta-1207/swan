@@ -132,29 +132,30 @@ body {
   font-family: 'Gilroy', Arial, sans-serif;
   color: #000;
 }
+.afterheader__name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .afterheader__subtitle {
   color: #767676;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin: 0 0 10px;
 }
 .afterheader__title {
   font-weight: 800;
   font-size: 42px;
   line-height: 1.2;
+  margin: 0;
 }
 .afterheader__info {
   display: flex;
   color: #767676;
   font-weight: 500;
-  align-self: flex-end;
-  margin-bottom: 10px;
 }
 .afterheader {
-  display: flex;
   padding: 0 150px;
-  justify-content: space-between;
   margin-top: 90px;
-  align-items: center;
 }
 .pointer {
   height: 8px;
