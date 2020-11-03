@@ -1,0 +1,207 @@
+@font-face {
+  src: url("../fonts/Gilroy-Regular.woff2") format('woff2'), url("../fonts/Gilroy-Regular.woff") format('woff');
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  src: url("../fonts/Gilroy-Medium.woff2") format('woff2'), url("../fonts/Gilroy-Medium.woff") format('woff');
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  src: url("../fonts/Gilroy-Semibold.woff2") format('woff2'), url("../fonts/Gilroy-Semibold.woff") format('woff');
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  src: url("../fonts/Gilroy-Bold.woff2") format('woff2'), url("../fonts/Gilroy-Bold.woff") format('woff');
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  src: url("../fonts/Gilroy-Extrabold.woff2") format('woff2'), url("../fonts/Gilroy-Extrabold.woff") format('woff');
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 800;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  box-shadow: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  width: 100%;
+  border: none;
+  background: #fff;
+  height: 0.3125rem;
+}
+::-webkit-progress-bar {
+  background: #fff;
+}
+::-webkit-progress-value {
+  background: $blue;
+}
+img {
+  display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder {
+  font-family: $Regular;
+  font-weight: 100;
+  color: #929292;
+}
+textarea::-moz-placeholder,
+input::-moz-placeholder {
+  font-family: $Regular;
+  font-weight: 100;
+  color: #929292;
+}
+textarea:-moz-placeholder,
+input:-moz-placeholder {
+  font-family: $Regular;
+  font-weight: 100;
+  color: #929292;
+}
+textarea:-ms-input-placeholder,
+input:-ms-input-placeholder {
+  font-family: $Regular;
+  font-weight: 100;
+  color: #929292;
+}
+.g-wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.blur {
+  filter: blur(10px);
+}
+section,
+main {
+  position: relative;
+  display: block;
+}
+@media (max-width: 1440px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1180px) {
+  .g-wrapper {
+    padding: 0 20px;
+    width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .barba-container {
+    margin-top: 4.6875rem;
+  }
+}
+@media (max-width: 414px) {
+  input[type='text'],
+  input[type='password'],
+  input[type='email'],
+  textarea {
+    font-size: 16px;
+  }
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 150px 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #333;
+}
+.nav__links {
+  list-style: none;
+  display: flex;
+}
+.nav__link {
+  margin-right: 32px;
+  display: flex;
+}
+.nav__chevron {
+  object-fit: contain;
+  margin-left: 6px;
+  align-self: center;
+}
+.connection__recall {
+  color: #0475c7;
+  border-bottom: 1px solid #0475c7;
+}
+.connection__phone {
+  margin-right: 35px;
+}
+html,
+body {
+  height: 100%;
+  background-color: #fff;
+  min-width: 320px;
+  margin: 0 auto;
+  font-family: 'Gilroy', Arial, sans-serif;
+  color: #000;
+}
+.render {
+  height: 100%;
+  width: 100%;
+  z-index: 99999;
+}
+.afterheader__subtitle {
+  color: #767676;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.afterheader__title {
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 1.2;
+}
+.afterheader__info {
+  display: flex;
+  color: #767676;
+  font-weight: 500;
+}
+.afterheader__technology {
+  margin-right: 24px;
+}
+.afterheader__pointer {
+  height: 8px;
+  width: 8px;
+  background-color: #cfcfcf;
+  align-self: center;
+  border-radius: 50%;
+  margin-right: 24px;
+}
+.afterheader {
+  display: flex;
+  padding: 0 150px;
+  justify-content: space-between;
+  margin-top: 90px;
+  align-items: center;
+}
