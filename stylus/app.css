@@ -187,6 +187,7 @@ body {
 .preview__team {
   display: flex;
   margin-left: 16px;
+  align-items: center;
 }
 .preview__team-member {
   margin-right: -10px;
